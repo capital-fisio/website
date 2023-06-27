@@ -1,12 +1,14 @@
 
-* { margin: 0; padding: 0; }
+/** { 
+    margin: 0; padding: 0; 
+}
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0;
 }
-.navbar{
+.navebar{
     display: flex;
     flex-flow: row wrap;
     height: 100px;
@@ -15,9 +17,10 @@ body{
     align-items: center;
     position: fixed;
     width: 100%;
-}
+    z-index: 2;
+}*/
 
-.logo{
+/*.logo{
     margin-top: 10px;
     height: 100px;
 }
@@ -46,6 +49,125 @@ body{
     color:white;
     border-top: 4px solid white;
 }
+
+
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;   
+}
+
+.headline{
+    margin-left: 10%;
+    flex: 40%;
+    /* border: 1px solid black; 
+
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size: 30px;
+    color: darkslategray;
+    padding: 0;
+    margin:0;
+}
+
+.headline p{
+    color: gray;
+    text-align: left;
+}
+
+.contact-btn{
+    display: inline-block;
+    background:#1c5a36;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact-btn:hover{
+    background: darkslategray;
+}
+
+.img-headline{
+    margin-right: 10%;
+    flex: 40%;
+    /* border: 1px solid deeppink;
+    text-align: center;
+
+}
+
+section{
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 300px;
+    /*border: 1px solid black;
+    height: 400px;
+    text-align: center;
+    padding: 5%;
+}
+
+
+#servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+#quem_somos{
+    width: 100%;
+}
+
+
+.agencia{
+    font-family: 'Lobster',cursive;
+    color: white;
+    font-size: 34px;  
+}
+
+*/
+
+* { margin: 0; padding: 0; }
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+/*Layout*/
+html, body, #home{
+    height:100%;
+}
+
+body{
+    background: rgba(255,255,255,0.7);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*Barra de navegação*/
+nav.navebar{
+    padding: 20px;
+    background:#1c5a36;
+}
+.navbar-nav .nav-link{
+    color: white;
+}
+.navbar-nav .nav-link:hover{
+    border-top: 4px solid white;
+}
+.navbar-toggler{
+    color: rgba(255,255,255,0.5);
+    border-color: rgba(255,255,255,0.5);
+    background: #1c5a36;
+}
+
 #botao{
     background-color: #1c5a36;
     padding: 10px 25px;
@@ -60,77 +182,25 @@ body{
     background: white;
 }
 
-.header{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    padding-top: 100px;
-}
+/*Slide*/
 
-.headline{
-    margin-left: 10%;
-    flex: 40%;
-    /* border: 1px solid black; */
-
-}
-.headline h2{
-    font-weight: 900;
-    font-size: 30px;
-    color: darkslategray;
-    padding: 0;
-    margin:0;
-}
-.headline p{
-    color: gray;
-    text-align: left;
-}
-.contact-btn{
-    display: inline-block;
-    background:#1c5a36;
-    padding: 20px;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 5px;
-    text-decoration: none;
-}
-.contact-btn:hover{
-    background: darkslategray;
-}
-.img-headline{
-    margin-right: 10%;
-    flex: 40%;
-    /* border: 1px solid deeppink; */
+.capa{
     text-align: center;
+}
 
+.carousel-inner > .carousel-item > img {
+    max-width: 100%; 
 }
-section{
-    display: inline-block;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 80px;
-    /*border: 1px solid black;*/
-    height: 400px;
-    text-align: center;
-    padding: 5%;
+
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
 }
-section h2{
-    width: 100%;
-    font-size: 50px;
-    margin: 0;
-    font-weight: bold;
-    color: darkslategray;
-}
-.servicos{
-    display: inline-block;
-    margin-top: 5%;
-}
-.quem_somos{
-    display: inline-block;
-    margin-top: 5px;
-}
-.card{
+
+
+/*Cartão
+---------------------*/
+
+.cartao{
     display: inline-block;
     width: 30%;
     padding: 20px;
@@ -139,100 +209,93 @@ section h2{
     border-radius: 10px;
     cursor: pointer;
 }
+
 .texto-oculto{
     display: none;
 }
-.card:hover{
+
+.cartao:hover{
     background:#1c5a36;
     color: white;
     padding:40px;
 }
-.card:hover img{
+
+.cartao:hover img{
     display:none;
 }
 
-.card:hover .card-text{
+.cartao:hover .card-text{
     display: none;
 }
-.card:hover .texto-oculto{
+
+.cartao:hover .texto-oculto{
     display:block
 }
+
+
+
+
+/*Rodapé*/
+
 footer{
-    margin-top: 100px;
-    height: 300px;
     background: #1c5a36 ;
-    text-align: center;
+    padding: 50px 0;
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
 }
 
-.logo-rodape{
-    padding: 100px;
-}
-.agencia{
-    font-family: 'Lobster',cursive;
+footer h4{
     color: white;
-    font-size: 34px;  
+    font-size: 0.8em;
+    text-transform: uppercase;
 }
+
+footer .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+}
+footer .navbar-nav a:hover{
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    float:right;
+    margin: 0 5px;
+}
+
+
+
+/*Tipografia*/
+.verde{
+    background: #1c5a36;
+    color: white;
+}
+
+h2{
+    color: #1c5a36;
+}
+
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+/*Whatsapp*/
 .whats{
     position: fixed;
     bottom: 5px;
     right: 5px;
-    width: 100px;
-}
-
-.slider{
-    display: block;
-    height: 296px;
-    width: 600px;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
     
 }
-.slider li{
-    list-style: none;
-    position: absolute;
-}
 
-.slider img{
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
-}
-
-.slider input{
-    display: none;
-}
-
-.slider label{
-    background-color: #000;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
-}
-
-.slider li:nth-child(1) label{
-    left: 10px;
-}
-
-.slider li:nth-child(2) label{
-    left: 40px;
-}
-
-.slider li:nth-child(3) label{
-    left: 70px;
-}
-.slider img{
-    opacity: 0;
-    visibility: hidden;
-}
-
-.slider li input:checked ~ img{
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
-}

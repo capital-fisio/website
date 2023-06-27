@@ -1,11 +1,11 @@
 @media screen and (max-width:1005px){
-   .navbar{
+   .navebar{
     position: relative;
    }
     .menu{
         display:none;
     }
-    logo{
+    .logo{
         margin:0;
         text-align: center;
     }
